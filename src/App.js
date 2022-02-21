@@ -1,24 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Frontend/Header';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState } from 'react';
+import LoadingBar from 'react-top-loading-bar'
+import Product from './Components/Frontend/Product';
+import Customdevelopment from './Components/Frontend/Customdevelopment';
+import Home from './Components/Frontend/Home';
+import Footer from './Components/Frontend/Footer';
+import Privacy from './Components/Frontend/Privacy';
+import Terms from './Components/Frontend/Terms';
+import Testimonial from './Components/Frontend/Testimonial';
+import Contact from './Components/Frontend/Contact';
+import Faq from './Components/Frontend/Faq';
+import About from './Components/Frontend/About';
+import WhmcsSetup from './Components/Frontend/WhmcsSetup';
+import WhmcsCustomization from './Components/Frontend/WhmcsCustomization';
+import WhmcsModulesDevelopment from './Components/Frontend/WhmcsModulesDevelopment';
+import WhmcsCustomTheme from './Components/Frontend/WhmcsCustomTheme';
+import WhmcsServerManagement from './Components/Frontend/WhmcsServerManagement';
 
 function App() {
+
+  const [progress, setProgress] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header/>
+        <LoadingBar color='#71d0f4' height={3} loaderSpeed={1500} waitingTime={1500} progress={progress} onLoaderFinished={() => setProgress(0)}/>
+        <Routes>
+          <Route exact path="/home" element={<Home setProgress={setProgress} />} />
+          <Route exact path="/whmcs-modules-themes" element={<Product setProgress={setProgress}/>} />
+          <Route exact path="/custom-whmcs-development" element={<Customdevelopment setProgress={setProgress}/>} />
+          <Route exact path="/privacy" element={<Privacy setProgress={setProgress}/>} />
+          <Route exact path="/terms" element={<Terms setProgress={setProgress}/>} />
+          <Route exact path="/testimonial" element={<Testimonial setProgress={setProgress}/>} />
+          <Route exact path="/contact" element={<Contact setProgress={setProgress}/>} />
+          <Route exact path="/faq" element={<Faq setProgress={setProgress}/>} />
+          <Route exact path="/about" element={<About setProgress={setProgress}/>} />
+          <Route exact path="/whmcs-setup" element={<WhmcsSetup setProgress={setProgress}/>} />
+          <Route exact path="/whmcs-customization" element={<WhmcsCustomization setProgress={setProgress}/>} />
+          <Route exact path="/whmcs-modules-development" element={<WhmcsModulesDevelopment setProgress={setProgress}/>} />
+          <Route exact path="/whmcs-custom-theme-development" element={<WhmcsCustomTheme setProgress={setProgress}/>} />
+          <Route exact path="/server-management-services" element={<WhmcsServerManagement setProgress={setProgress}/>} />
+        </Routes>
+        <Footer/>
+      </Router>
+    </>
   );
 }
 
