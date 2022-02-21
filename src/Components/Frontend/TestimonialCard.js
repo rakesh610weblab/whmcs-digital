@@ -15,7 +15,7 @@ const TestimonialCard = (props) => {
                 <p className="p_style">{description}</p>
                 <div className="media align-items-center">
                     <div className="media-left">
-                        <div className="user_img"> <img src={image} alt="User"/> </div>
+                        <div className="user_img"> <img src={`/whmcs-digital/${image}`} alt="User"/> </div>
                     </div>
                     <div className="media-body">
                         <h4>{title}</h4>

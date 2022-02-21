@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-3">
                 <Link to="/" className="footer_logo">
-                  <img src="/images/footer_logo.png" alt="Logo" />
+                  <img src="/whmcs-digital/images/footer_logo.png" alt="Logo" />
                 </Link>
                 <div className="address">
                   <p>

@@ -72,7 +72,7 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-light">
                   <div className="container-fluid">
                     <Link className="navbar-brand" to="/home">
-                      <img src="whmcs-digital/images/logo.png" alt="Logo" />
+                      <img src="/whmcs-digital/images/logo.png" alt="Logo" />
                     </Link>
                     <button
                       className="navbar-toggler"
