@@ -35,7 +35,7 @@ const About = (props) => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="about_img"> <img src="/images/about_img.jpg" alt="About"/> </div>
+                        <div className="about_img"> <img src="whmcs-digital/images/about_img.jpg" alt="About"/> </div>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const About = (props) => {
                 <div className="row mr_top">
                     <div className="col-md-4">
                         <div className="people_box">
-                            <div className="people_img"> <img src="/images/people_img1.jpg" alt="People"/> </div>
+                            <div className="people_img"> <img src="whmcs-digital/images/people_img1.jpg" alt="People"/> </div>
                             <h4>Ambitious workaholic, but apart</h4>
                             <h3>Christina Kray</h3>
                             <p>Lead Developer, Genome</p>
@@ -58,7 +58,7 @@ const About = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className="people_box">
-                            <div className="people_img"> <img src="/images/people_img2.jpg" alt="People"/> </div>
+                            <div className="people_img"> <img src="whmcs-digital/images/people_img2.jpg" alt="People"/> </div>
                             <h4>Ambitious workaholic, but apart</h4>
                             <h3>Jeff Fisher</h3>
                             <p>Lead Developer, Genome</p>
@@ -66,7 +66,7 @@ const About = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className="people_box">
-                            <div className="people_img"> <img src="/images/people_img3.jpg" alt="People"/> </div>
+                            <div className="people_img"> <img src="whmcs-digital/images/people_img3.jpg" alt="People"/> </div>
                             <h4>Ambitious workaholic, but apart</h4>
                             <h3>Konrad Keck</h3>
                             <p>Lead Developer, Genome</p>
@@ -97,7 +97,7 @@ const About = (props) => {
                             <p className="p_style">Leave all your WHMCS related hassles on us and you just focus on your business goals.</p><Link to="/contact" className="default_btn get">Get Started</Link> </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="mission_img"> <img src="/images/mission_img.png" alt="Mission"/> </div>
+                        <div className="mission_img"> <img src="whmcs-digital/images/mission_img.png" alt="Mission"/> </div>
                     </div>
                 </div>
             </div>

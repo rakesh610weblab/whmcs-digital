@@ -54,7 +54,7 @@ const WhmcsCustomization = (props) => {
             <div className="col-md-12 col-lg-6">
               <div className="whmcs_setup_img">
                 <img
-                  src="/images/whmcs-customization.png"
+                  src="whmcs-digital/images/whmcs-customization.png"
                   alt="WHMCS Setup, Version upgrade and Configuration"
                   className="img-fluid"
                 />

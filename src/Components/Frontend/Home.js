@@ -81,31 +81,31 @@ const Home = (props) => {
                   <div className="logo_outer">
                     <div className="our_logo">
                       <img
-                        src="../images/whmcs.png"
+                        src="whmcs-digital/images/whmcs.png"
                         alt="WHMCS Development Company"
                       />
                     </div>
                     <div className="our_logo">
                       <img
-                        src="../images/cpanel.png"
+                        src="whmcs-digital/images/cpanel.png"
                         alt="cPanel - WHMCS Development Company"
                       />
                     </div>
                     <div className="our_logo">
                       <img
-                        src="../images/laravel.png"
+                        src="whmcs-digital/images/laravel.png"
                         alt="Laravel - WHMCS Development Company"
                       />
                     </div>
                     <div className="our_logo">
                       <img
-                        src="../images/wordpress.png"
+                        src="whmcs-digital/images/wordpress.png"
                         alt="Wordpress - WHMCS Development Company"
                       />
                     </div>
                     <div className="our_logo">
                       <img
-                        src="../images/magento.png"
+                        src="whmcs-digital/images/magento.png"
                         alt="Magento - WHMCS Development Company"
                       />
                     </div>
@@ -177,7 +177,7 @@ const Home = (props) => {
             <div className="col-md-12 col-lg-6">
               <div className="team_img">
                 <img
-                  src="/images/team_img.webp"
+                  src="whmcs-digital/images/team_img.webp"
                   alt="WHMCS Digital - WHMCS Development Company"
                 />
               </div>

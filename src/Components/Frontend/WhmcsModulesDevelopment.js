@@ -31,7 +31,7 @@ const WhmcsModulesDevelopment = (props) => {
                             <li> <span className="icon icon-checked"></span> Get the solution in no time </li>
                         </ul> <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&amp;deptid=2" className="default_btn" target="_blank" rel="noreferrer">Hire Now</a> </div>
                     <div className="col-md-12 col-lg-5">
-                        <div className="whmcs_setup_img"> <img src="/images/whmcs_modules_img.png" alt="WHMCS Modules Development & Automation" className="img-fluid"/> </div>
+                        <div className="whmcs_setup_img"> <img src="whmcs-digital/images/whmcs_modules_img.png" alt="WHMCS Modules Development & Automation" className="img-fluid"/> </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@ const WhmcsModulesDevelopment = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
-                                                    <div className="module_img"> <img src="/images/payment-gateway.svg" alt="Payment Gateway - WHMCS Modules Development" className="payment_img"/> </div>
+                                                    <div className="module_img"> <img src="whmcs-digital/images/payment-gateway.svg" alt="Payment Gateway - WHMCS Modules Development" className="payment_img"/> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@ const WhmcsModulesDevelopment = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
-                                                    <div className="module_img"> <img src="/images/domin_img.svg" alt="Domain - WHMCS Modules Development" className="payment_img"/> </div>
+                                                    <div className="module_img"> <img src="whmcs-digital/images/domin_img.svg" alt="Domain - WHMCS Modules Development" className="payment_img"/> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@ const WhmcsModulesDevelopment = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
-                                                    <div className="module_img"> <img src="/images/server-provision.svg" alt="Server Provision - WHMCS Modules Development" className="payment_img"/> </div>
+                                                    <div className="module_img"> <img src="whmcs-digital/images/server-provision.svg" alt="Server Provision - WHMCS Modules Development" className="payment_img"/> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -133,7 +133,7 @@ const WhmcsModulesDevelopment = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
-                                                    <div className="module_img"> <img src="/images/accounting.svg" alt="Accounting - WHMCS Modules Development" className="payment_img"/> </div>
+                                                    <div className="module_img"> <img src="whmcs-digital/images/accounting.svg" alt="Accounting - WHMCS Modules Development" className="payment_img"/> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -149,7 +149,7 @@ const WhmcsModulesDevelopment = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
-                                                    <div className="module_img"> <img src="/images/reporting.svg" alt="Reporting - WHMCS Modules Development" className="payment_img"/> </div>
+                                                    <div className="module_img"> <img src="whmcs-digital/images/reporting.svg" alt="Reporting - WHMCS Modules Development" className="payment_img"/> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@ const WhmcsModulesDevelopment = (props) => {
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
-                                                    <div className="module_img"> <img src="/images/marketing.svg" alt="Marketing - WHMCS Modules Development" className="payment_img"/> </div>
+                                                    <div className="module_img"> <img src="whmcs-digital/images/marketing.svg" alt="Marketing - WHMCS Modules Development" className="payment_img"/> </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -191,12 +191,12 @@ const WhmcsModulesDevelopment = (props) => {
                     </div>
                     <div className="col-md-6">
                         <div className="module_get_text"> <Link to="/home"> 
-                        <img src="/images/logo.png" alt="WHMCS Digital"/> </Link>
+                        <img src="whmcs-digital/images/logo.png" alt="WHMCS Digital"/> </Link>
                             <h2 className="h2_style">WHMCS Digital offerings</h2>
                             <div className="offer_outer">
                                 <div className="media align-items-center">
                                     <div className="media-left"> 
-                                    <img src="/images/free-consultation.svg" alt="Free Consultation for WHMCS Modules Development"/> </div>
+                                    <img src="whmcs-digital/images/free-consultation.svg" alt="Free Consultation for WHMCS Modules Development"/> </div>
                                     <div className="media-body">
                                         <h3>Free Consultation</h3>
                                         <p>Want free consultation regarding WHMCS modules? Then contact us right away. We are just a click away. </p>
@@ -204,7 +204,7 @@ const WhmcsModulesDevelopment = (props) => {
                                 </div>
                                 <div className="media align-items-center">
                                     <div className="media-left"> 
-                                    <img src="/images/support-img.svg" alt="24x7 Support for WHMCS Modules Development"/> </div>
+                                    <img src="whmcs-digital/images/support-img.svg" alt="24x7 Support for WHMCS Modules Development"/> </div>
                                     <div className="media-body">
                                         <h3>24/7/365 Support</h3>
                                         <p>We are here to offer round-the-clock support to our clients. Our team got your back in any situation</p>
@@ -212,7 +212,7 @@ const WhmcsModulesDevelopment = (props) => {
                                 </div>
                                 <div className="media align-items-center">
                                     <div className="media-left"> 
-                                    <img src="/images/developer.svg" alt="Dedicated Developer for WHMCS Modules Development"/> </div>
+                                    <img src="whmcs-digital/images/developer.svg" alt="Dedicated Developer for WHMCS Modules Development"/> </div>
                                     <div className="media-body">
                                         <h3>Dedicated Developer</h3>
                                         <p>We have the best team of dedicated and skilled developers to offer unsurpassable services. </p>

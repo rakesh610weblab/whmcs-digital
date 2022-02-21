@@ -51,14 +51,14 @@ const WhmcsSetup = (props) => {
             <div className="col-md-12 col-lg-6">
               <div className="whmcs_setup_img">
                 <img
-                  src="/images/whmcs-setup-img.png"
+                  src="whmcs-digital/images/whmcs-setup-img.png"
                   alt="WHMCS Setup, Version upgrade and Configuration"
                   className="img-fluid"
                 />
                 <div className="version_box">
                   <div className="media">
                     <div className="media-left">
-                      <img src="/images/download_icon.svg" alt="Version" />
+                      <img src="whmcs-digital/images/download_icon.svg" alt="Version" />
                     </div>
                     <div className="media-body">
                       <h4>New Installation with</h4>

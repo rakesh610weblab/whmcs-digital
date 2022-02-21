@@ -23,7 +23,7 @@ const WhmcsServerManagement = (props) => {
                 <div className="col-12">
                     <h1>Web Server Administrator </h1>
                     <h3> <span>Want to take your business to a higher level? Choose the best web server for it.</span></h3> <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&amp;deptid=2" className="default_btn" target="_blank" rel="noreferrer">Hire Server Administrator</a>
-                    <div className="web_server_img"> <img src="/images/web-server.png" alt="Web server" className="img-fluid"/> </div>
+                    <div className="web_server_img"> <img src="whmcs-digital/images/web-server.png" alt="Web server" className="img-fluid"/> </div>
                 </div>
             </div>
         </div>
@@ -39,42 +39,42 @@ const WhmcsServerManagement = (props) => {
             <div className="row row-40 mr_top server_outer">
                 <div className="col-sm-6 col-lg-4">
                     <div className="services_box add_border">
-                        <div className="shape_img"> <img src="/images/cloud_platform.svg" alt="Service"/> </div>
+                        <div className="shape_img"> <img src="whmcs-digital/images/cloud_platform.svg" alt="Service"/> </div>
                         <h3>Google Cloud Platform</h3>
                         <p className="p_style">It's time to build and scale applications on a highly scalabel platform without constantly worrying about infrastructure management.</p>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-4">
                     <div className="services_box add_border">
-                        <div className="shape_img"> <img src="/images/aws_cloud.svg" alt="Service"/> </div>
+                        <div className="shape_img"> <img src="whmcs-digital/images/aws_cloud.svg" alt="Service"/> </div>
                         <h3>AWS Cloud Servers</h3>
                         <p className="p_style">Create, deploy, and manage websites, apps, and processes on AWS cloud server. Create an account and take advantage of AWS' secure, scalabel, and reliable services. </p>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-4">
                     <div className="services_box add_border">
-                        <div className="shape_img vps_img"> <img src="/images/vps.png" alt="Service"/> </div>
+                        <div className="shape_img vps_img"> <img src="whmcs-digital/images/vps.png" alt="Service"/> </div>
                         <h3>VPS Server</h3>
                         <p className="p_style">Want to enjoy private space on the server? Then VPS server is the best option for you. It’s time to enjoy secure, and reliable services.</p>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-4">
                     <div className="services_box add_border">
-                        <div className="shape_img"> <img src="/images/dedicated-server.svg" alt="Service"/> </div>
+                        <div className="shape_img"> <img src="whmcs-digital/images/dedicated-server.svg" alt="Service"/> </div>
                         <h3>Dedicated Server</h3>
                         <p className="p_style">Enjoy the whole server space, resources, and things by yourself. Let’s give your business a kickstart with a dedicated server. </p>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-4">
                     <div className="services_box add_border">
-                        <div className="shape_img"> <img src="/images/ovh-server.svg" alt="Service"/> </div>
+                        <div className="shape_img"> <img src="whmcs-digital/images/ovh-server.svg" alt="Service"/> </div>
                         <h3>OVH Server</h3>
                         <p className="p_style">For your business applications, select the best infrastructure. The most cost-effective option is to use an OVH server. Enjoy the amazing benefits of this server.</p>
                     </div>
                 </div>
                 <div className="col-sm-6 col-lg-4">
                     <div className="services_box add_border">
-                        <div className="shape_img"> <img src="/images/digital-ocean.svg" alt="Service"/> </div>
+                        <div className="shape_img"> <img src="whmcs-digital/images/digital-ocean.svg" alt="Service"/> </div>
                         <h3>Digital Ocean</h3>
                         <p className="p_style">With Digital Ocean server, you can deploy faster and scale more easily, saving your team time and money. Get started with the best cloud infrastructure solutions.</p>
                     </div>
@@ -91,17 +91,17 @@ const WhmcsServerManagement = (props) => {
                     <div
                         className="hosting_logos">
                         <div className="hosting_box">
-                            <div className="hsoting_img"> <img src="/images/cpanel_small_logo.png" alt="Hosting Logo"/> </div><span>cPanel</span> </div>
+                            <div className="hsoting_img"> <img src="whmcs-digital/images/cpanel_small_logo.png" alt="Hosting Logo"/> </div><span>cPanel</span> </div>
                         <div className="hosting_box">
-                            <div className="hsoting_img"> <img src="/images/pleask_logo.png" alt="Hosting Logo"/> </div><span>Plesk</span> </div>
+                            <div className="hsoting_img"> <img src="whmcs-digital/images/pleask_logo.png" alt="Hosting Logo"/> </div><span>Plesk</span> </div>
                         <div className="hosting_box">
-                            <div className="hsoting_img"> <img src="/images/hp_logo.png" alt="Hosting Logo"/> </div><span>hPanel</span> </div>
+                            <div className="hsoting_img"> <img src="whmcs-digital/images/hp_logo.png" alt="Hosting Logo"/> </div><span>hPanel</span> </div>
                         <div className="hosting_box">
-                            <div className="hsoting_img"> <img src="/images/direct_logo.png" alt="Hosting Logo"/> </div><span>Direct Admin</span> </div>
+                            <div className="hsoting_img"> <img src="whmcs-digital/images/direct_logo.png" alt="Hosting Logo"/> </div><span>Direct Admin</span> </div>
                         <div className="hosting_box">
-                            <div className="hsoting_img"> <img src="/images/webmin_logo.png" alt="Hosting Logo"/> </div><span>Webmin</span> </div>
+                            <div className="hsoting_img"> <img src="whmcs-digital/images/webmin_logo.png" alt="Hosting Logo"/> </div><span>Webmin</span> </div>
                         <div className="hosting_box">
-                            <div className="hsoting_img"> <img src="/images/isp_logo.png" alt="Hosting Logo"/> </div><span>ISPmanager</span> </div>
+                            <div className="hsoting_img"> <img src="whmcs-digital/images/isp_logo.png" alt="Hosting Logo"/> </div><span>ISPmanager</span> </div>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ const WhmcsServerManagement = (props) => {
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <div className="offer_left">
-                        <div className="offer_img"> <img src="/images/server_offfer_img.jpg" alt="Servie Image" className="img-fluid"/> </div>
+                        <div className="offer_img"> <img src="whmcs-digital/images/server_offfer_img.jpg" alt="Servie Image" className="img-fluid"/> </div>
                     </div>
                 </div>
                 <div className="col-md-6">

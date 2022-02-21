@@ -279,7 +279,7 @@ const Customdevelopment = (props) => {
                       <div className="hire_text">
                           <div className="media">
                               <div className="media-left"> 
-                                <img src="/images/freelancer.svg" alt="Custom WHMCS Development"/> 
+                                <img src="whmcs-digital/images/freelancer.svg" alt="Custom WHMCS Development"/> 
                               </div>
                               <div className="media-body">
                                   <h2>Hired a <br></br>Freelancer Developer</h2>
@@ -298,7 +298,7 @@ const Customdevelopment = (props) => {
                       <div className="hire_text hire_right">
                           <div className="media">
                               <div className="media-left"> 
-                                <img src="/images/developer.svg" alt="Hire a Freelancer - Custom WHMCS Development"/> 
+                                <img src="whmcs-digital/images/developer.svg" alt="Hire a Freelancer - Custom WHMCS Development"/> 
                               </div>
                               <div className="media-body">
                                   <h2>Outsourced a<br></br>Developer</h2>
