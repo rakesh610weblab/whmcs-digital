@@ -29,7 +29,7 @@ function App() {
         <Header/>
         <LoadingBar color='#71d0f4' height={3} loaderSpeed={1500} waitingTime={1500} progress={progress} onLoaderFinished={() => setProgress(0)}/>
         <Routes>
-          <Route exact path="/home" element={<Home setProgress={setProgress} />} />
+          <Route exact path="/" element={<Home setProgress={setProgress} />} />
           <Route exact path="/whmcs-modules-themes" element={<Product setProgress={setProgress}/>} />
           <Route exact path="/custom-whmcs-development" element={<Customdevelopment setProgress={setProgress}/>} />
           <Route exact path="/privacy" element={<Privacy setProgress={setProgress}/>} />

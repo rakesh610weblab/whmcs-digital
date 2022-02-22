@@ -71,7 +71,7 @@ const Navbar = () => {
               <div className="col-12">
                 <nav className="navbar navbar-expand-lg navbar-light">
                   <div className="container-fluid">
-                    <Link className="navbar-brand" to="/home">
+                    <Link className="navbar-brand" to="/">
                       <img src="/whmcs-digital/images/logo.png" alt="Logo" />
                     </Link>
                     <button
@@ -105,7 +105,7 @@ const Navbar = () => {
                           <NavLink
                             activeclassname="active"
                             className="nav-link"
-                            to="/home"
+                            to="/"
                           >
                             Home
                           </NavLink>
