@@ -27,9 +27,9 @@ const Customdevelopment = (props) => {
                 Our WHMCS PRO will provide you with spic-and-span WHMCS
                 development and maintenance outsourcing services!
               </h3>
-              <Link to="/" className="default_btn">
+              <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&deptid=2" target="_blank" rel="noreferrer" className="default_btn">
                 Get A Quote
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@ const Customdevelopment = (props) => {
                                   <h5>3 Months For</h5>
                                   <h4>$249/mo</h4>
                               </div>
-                              <Link to="/">Get A Quote</Link> 
+                              <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&deptid=2" target="_blank" rel="noreferrer">Get A Quote</a> 
                             </div>
                       </div>
                   </div>

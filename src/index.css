@@ -8300,3 +8300,6 @@ a.hire__us_Btn {
   background-color: #2baae2;
   color: #fff;
 }
+span.errorMessage {
+  color: red;
+}

@@ -54,128 +54,117 @@ const ContactusForm = () => {
 
   return (
     <>
-      
-              <div className="contactForm">
-                <form
-                  id="contactus"
-                  onSubmit={handleSubmit(onSubmit)}
-                  noValidate
-                >
-                  <div className="form-group">
-                  <label>Full Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      {...register("name", {
-                        required: {
-                          value: true,
-                          message: "Please enter your name",
-                        },
-                        maxLength: {
-                          value: 30,
-                          message: "Please use 30 characters or less",
-                        },
-                      })}
-                      className="form-control formInput"
-                      placeholder="Full Name"
-                    ></input>
-                    {errors.name && (
-                      <span className="errorMessage">
-                        {errors.name.message}
-                      </span>
-                    )}
-                  </div>
-                  <div className="form-group">
-                  <label>Email Address</label>
-                    <input
-                      type="email"
-                      name="email"
-                      {...register("email", {
-                        required: true,
-                        pattern:
-                          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                      })}
-                      className="form-control formInput"
-                      placeholder="Email Address"
-                    ></input>
-                    {errors.email && (
-                      <span className="errorMessage">
-                        Please enter a valid email address
-                      </span>
-                    )}
-                  </div>
+      <div className="contactForm">
+        <form id="contactus" onSubmit={handleSubmit(onSubmit)} noValidate>
+          <div className="form-group">
+            <label>Full Name</label>
+            <input
+              type="text"
+              name="name"
+              {...register("name", {
+                required: {
+                  value: true,
+                  message: "Please enter your name",
+                },
+                maxLength: {
+                  value: 30,
+                  message: "Please use 30 characters or less",
+                },
+              })}
+              className="form-control formInput"
+              placeholder="Full Name"
+            ></input>
+            {errors.name && (
+              <span className="errorMessage">{errors.name.message}</span>
+            )}
+          </div>
+          <div className="form-group">
+            <label>Email Address</label>
+            <input
+              type="email"
+              name="email"
+              {...register("email", {
+                required: true,
+                pattern:
+                  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+              })}
+              className="form-control formInput"
+              placeholder="Email Address"
+            ></input>
+            {errors.email && (
+              <span className="errorMessage">
+                Please enter a valid email address
+              </span>
+            )}
+          </div>
 
-                  <div className="form-group">
-                  <label>Phone Number</label>
-                    <input
-                      type="text"
-                      name="phone"
-                      {...register("phone", {
-                        required: {
-                          value: true,
-                          message: "Please enter a phone no.",
-                        },
-                      })}
-                      className="form-control formInput"
-                      placeholder="Phone Number"
-                    ></input>
-                    {errors.phone && (
-                      <span className="errorMessage">
-                        {errors.phone.message}
-                      </span>
-                    )}
-                  </div>
-                  
-                  <div className="form-group">
-                    <label>Service</label>
-                    <div className="custom_select form-control">
-                      <select name="service" {...register("service", {
-                        required: {
-                          value: true,
-                          message: "Please Select service",
-                        },
-                      })}>
-                        <option selected="">Hosting website</option>
-                        <option>WHMCS Setup</option>
-                        <option>WHMCS Customization</option>
-                        <option>Modules Development</option>
-                        <option>Custom Theme Development</option>
-                        <option>Server Administration</option>
-                      </select>
-                    </div>
-                    {errors.service && (
-                      <span className="errorMessage">
-                        {errors.service.message}
-                      </span>
-                    )}
-                  </div>
+          <div className="form-group">
+            <label>Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              {...register("phone", {
+                required: {
+                  value: true,
+                  message: "Please enter a phone no.",
+                },
+              })}
+              className="form-control formInput"
+              placeholder="Phone Number"
+            ></input>
+            {errors.phone && (
+              <span className="errorMessage">{errors.phone.message}</span>
+            )}
+          </div>
 
-                  <div className="form-group">
-                  <label>Comment</label>
-                    <textarea
-                      rows={3}
-                      name="message"
-                      {...register("message", {
-                        required: true,
-                      })}
-                      className="form-control formInput"
-                      placeholder="Hi there, I would like to ..."
-                    ></textarea>
-                    {errors.message && (
-                      <span className="errorMessage">
-                        Please enter a message
-                      </span>
-                    )}
-                  </div>
-                  <div className="form-group">
-                    <button className="default_btn submit-btn" type="submit">
-                      SEND NOW
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <ToastContainer />
-            
+          <div className="form-group">
+            <label>Service</label>
+            <div className="custom_select form-control">
+              <select
+                name="service"
+                {...register("service", {
+                  required: {
+                    value: true,
+                    message: "Please Select service",
+                  },
+                })}
+              >
+                <option selected="">Hosting website</option>
+                <option>WHMCS Setup</option>
+                <option>WHMCS Customization</option>
+                <option>Modules Development</option>
+                <option>Custom Theme Development</option>
+                <option>Server Administration</option>
+              </select>
+            </div>
+            {errors.service && (
+              <span className="errorMessage">{errors.service.message}</span>
+            )}
+          </div>
+
+          <div className="form-group">
+            <label>Comment</label>
+            <textarea
+              rows={3}
+              name="message"
+              {...register("message", {
+                required: true,
+              })}
+              className="form-control formInput"
+              placeholder="Hi there, I would like to ..."
+            ></textarea>
+            {errors.message && (
+              <span className="errorMessage">Please enter a message</span>
+            )}
+          </div>
+          <div className="form-group">
+            <button className="default_btn submit-btn" type="submit">
+              SEND NOW
+            </button>
+          </div>
+        </form>
+      </div>
+      <ToastContainer />
 
       {/* <form action="" name="contactus" id="contactus">
         <div className="form-group">

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Card = (props) => {
 
-  let { id, image, title, description, readmorelink, price } = props;
+  let { id, image, title, description, readmorelink, price, category } = props;
 
   const Colors = ["#ed4c78", "#00c9a7", "#377dff", "#e97b57"];
   const [color, setColor] = useState('#377dff');
