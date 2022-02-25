@@ -192,8 +192,8 @@ const Home = (props) => {
                   <br></br>to Amplify Your Business Growth!
                 </h2>
                 <p className="p_style">
-                  We are a team of professional
-                  <Link to="/custom-whmcs-development">WHMCS developers</Link>
+                  We are a team of professional 
+                  <Link to="/custom-whmcs-development"> WHMCS developers </Link> 
                   who’re young, experienced, innovative, and more importantly
                   loyal to our customers. We offer a wide range of striving
                   WHMCS services and custom solutions that are intended to
