@@ -7,6 +7,7 @@ import UpworkCard from "./UpworkCard";
 import Slider from "react-slick";
 import TrustpilotCard from "./TrustpilotCard";
 import TrustpilotReviewsCards from "./Dynamicdata/TrustpilotReviewsCards";
+import GoogleReviewsCards from "./Dynamicdata/GoogleReviewsCards"
 
 const Testimonial = (props) => {
   useEffect(() => {
@@ -23,7 +24,7 @@ const Testimonial = (props) => {
     autoplay: true,
     autoplaySpeed: 4000,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 1
   };
 
   return (
@@ -132,7 +133,7 @@ const Testimonial = (props) => {
           </div>
           <div className="row ReviewsSlider row-40">
             <Slider {...settings}>
-              {UpworkReviewsCards.map((yehiElement) => {
+              {GoogleReviewsCards.map((yehiElement) => {
                 return (
                   <UpworkCard
                     id={yehiElement.id}

@@ -7,7 +7,7 @@ const Allcards = [
       readmorelink: "whmcs-modules-development",
       price: "$69.95/yr",
       review: "5",
-      category: "domain",
+      category: "domain"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Allcards = [
       readmorelink: "whmcs-custom-theme-development",
       price: "$59.95/yr",
       review: "4",
-      category: "Payment",
+      category: "Payment"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const Allcards = [
       readmorelink: "whmcs-modules-development",
       price: "$49.95/yr",
       review: "5",
-      category: "",
+      category: ""
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const Allcards = [
       readmorelink: "server-management-services",
       price: "$29.95/yr",
       review: "5",
-      category: "",
+      category: ""
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const Allcards = [
       readmorelink: "whmcs-setup",
       price: "$89.95/yr",
       review: "3",
-      category: "",
+      category: ""
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ const Allcards = [
       readmorelink: "whmcs-customization",
       price: "$82.95/yr",
       review: "5",
-      category: "",
+      category: ""
     },
     {
       id: 7,
@@ -67,7 +67,7 @@ const Allcards = [
       readmorelink: "whmcs-customization",
       price: "$52.95/yr",
       review: "4",
-      category: "",
+      category: ""
     },
     {
       id: 8,
@@ -77,7 +77,7 @@ const Allcards = [
       readmorelink: "whmcs-customization",
       price: "$52.95/yr",
       review: "4",
-      category: "",
+      category: ""
     },
 
   ];
