@@ -1364,9 +1364,10 @@ a.login_menu {
   height: auto;
   padding: 10px 20px;
 }
-
-.testimonial_box {
+.TestimonialSlider .testimonial_box{
   min-height: 421px;
+}
+.testimonial_box {
   background-color: var(--white);
   padding: 40px 50px;
   box-shadow: 0 0 2px 2px rgb(196 205 213 / 30%);
@@ -4899,7 +4900,9 @@ section.product_banner.testimonial_banner {
 .ReviewsSlider .slick-slide {
   height: auto;
   padding-top: 20px;
-  padding-bottom: 20px
+  padding-bottom: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .testimonial_text.review2 {

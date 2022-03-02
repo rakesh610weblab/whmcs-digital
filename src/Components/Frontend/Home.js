@@ -297,7 +297,7 @@ const Home = (props) => {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="view_all"> <a href="https://goo.gl/maps/c6qTQGnyzbgPqVdC8" target="_blank" className="default_btn">View All Reviews</a> </div>
+                        <div className="view_all"> <a href="https://goo.gl/maps/c6qTQGnyzbgPqVdC8" target="_blank" rel="noreferrer" className="default_btn">View All Reviews</a> </div>
                     </div>
                 </div>
                 <div className="TestimonialSlider row-40">
