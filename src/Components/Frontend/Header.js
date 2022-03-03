@@ -153,11 +153,6 @@ const Navbar = () => {
                             Blog
                           </a>
                         </div>
-                        <div className="blog_link help">
-                          <Link className="nav-link" to="//www.whmcsdigital.com/clientarea/submitticket.php" target="_blank" rel="noreferrer">
-                            Help
-                          </Link>
-                        </div>
                         <div className="blog_link help account_menu">
                           <Link to="/" className="login_menu">
                             Account

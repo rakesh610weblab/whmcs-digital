@@ -4,6 +4,7 @@ import Cta from "./Cta";
 import ProductsCards from "./Dynamicdata/ProductsCards";
 import Card from "./Card";
 import $ from 'jquery';
+import isotope from "isotope-layout";
 
 const Product = (props) => {
   useEffect(() => {
@@ -13,13 +14,13 @@ const Product = (props) => {
   }, []);
 
   
-  $(function(){
+  $(document).ready(function($) {
     $(".filters").on("click", "li", function () {
         var a = $(".grid").isotope({});
         var e = $(this).attr("data-filter");
         a.isotope({ filter: e });
+        
     });
-    
     $(".filters").on("click", "li", function () {
         $(this).addClass("active").siblings().removeClass("active");
     });
@@ -90,7 +91,7 @@ const Product = (props) => {
                   </div>
 
                   <div className="col-md-12">
-                      <div className="row row-40 justify-content-center grid">
+                      <div className="row row-40 justify-content-center grid" data-isotope='{ "itemSelector": ".element-item" }'>
                         {ProductsCards.map((yehiElement) => {
                           return (
                             <div className={`col-sm-6 col-md-4 col-xl-3 element-item ${yehiElement.category}`} key={yehiElement.id}>
