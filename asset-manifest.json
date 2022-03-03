@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/whmcs-digital/static/css/main.e08763ea.css",
-    "main.js": "/whmcs-digital/static/js/main.7ccb9eea.js",
+    "main.js": "/whmcs-digital/static/js/main.5653017e.js",
     "static/js/787.aa694ea3.chunk.js": "/whmcs-digital/static/js/787.aa694ea3.chunk.js",
     "static/media/about_bg.png": "/whmcs-digital/static/media/about_bg.aabcac0cdc17afde7214.png",
     "static/media/contact_page_bg.png": "/whmcs-digital/static/media/contact_page_bg.449f4e5f047ce18f4042.png",
@@ -27,11 +27,11 @@
     "static/media/top_image.jpg": "/whmcs-digital/static/media/top_image.87eec29d905cb03f5923.jpg",
     "index.html": "/whmcs-digital/index.html",
     "main.e08763ea.css.map": "/whmcs-digital/static/css/main.e08763ea.css.map",
-    "main.7ccb9eea.js.map": "/whmcs-digital/static/js/main.7ccb9eea.js.map",
+    "main.5653017e.js.map": "/whmcs-digital/static/js/main.5653017e.js.map",
     "787.aa694ea3.chunk.js.map": "/whmcs-digital/static/js/787.aa694ea3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e08763ea.css",
-    "static/js/main.7ccb9eea.js"
+    "static/js/main.5653017e.js"
   ]
 }
