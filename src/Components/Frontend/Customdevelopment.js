@@ -206,11 +206,9 @@ const Customdevelopment = (props) => {
                   <h3>Simple Contract</h3>
                   <div className="pricing_text">
                     <p className="p_style">
-                      We have the know-how and manpower to turn even a rough
-                      vision into a best digital ready IT solution.
+                    We believe in building relationships with our clients by providing quality work at best cost.<br></br> <br></br>We don`t have any long-term contracts to bound you. We offer a completely open billing structure to our clients. We work on fixed price, hourly rate, and retainer billing options.
                     </p>
-                    <h5>3 Months For</h5>
-                    <h4>$249/mo</h4>
+                    
                   </div>
                   <a
                     href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&deptid=2"
@@ -288,7 +286,7 @@ const Customdevelopment = (props) => {
             </div>
             <div className="col-md-6 col-lg-5">
               <div className="get_touch_form banner_form">
-                <h3>Get In Touch</h3>
+                <h3>Get In Touch</h3> 
                 <GetintouchForm />
               </div>
             </div>
@@ -321,7 +319,7 @@ const Customdevelopment = (props) => {
                       data-number="200"
                     >
                       <h3 id="number1" className="number">
-                        153
+                        200
                       </h3>
                       <h4>Projects</h4>
                       <p className="p_style">That Successfully Delivered.</p>
@@ -333,7 +331,7 @@ const Customdevelopment = (props) => {
                       data-number="400"
                     >
                       <h3 id="number2" className="number">
-                        115
+                        150
                       </h3>
                       <h4>Happy Clients</h4>
                       <p className="p_style">Still Working Together</p>
@@ -345,7 +343,7 @@ const Customdevelopment = (props) => {
                       data-number="400"
                     >
                       <h3 id="number3" className="number">
-                        53
+                        100
                       </h3>
                       <h4>Technology Experts</h4>
                       <p className="p_style">Result Oriented Players</p>

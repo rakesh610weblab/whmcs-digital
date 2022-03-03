@@ -12,6 +12,19 @@ const Product = (props) => {
     document.querySelector("header").className = "header_main inner_page";
   }, []);
 
+  
+  $(function(){
+    $(".filters").on("click", "li", function () {
+        var a = $(".grid").isotope({});
+        var e = $(this).attr("data-filter");
+        a.isotope({ filter: e });
+    });
+    
+    $(".filters").on("click", "li", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+}) 
+
   return (
     <>
       <div className="product_banner">
@@ -77,10 +90,10 @@ const Product = (props) => {
                   </div>
 
                   <div className="col-md-12">
-                      <div className="row row-40 justify-content-center grid" data-isotope='{ "itemSelector": ".grid-item" }'>
+                      <div className="row row-40 justify-content-center grid">
                         {ProductsCards.map((yehiElement) => {
                           return (
-                            <div className={`col-sm-6 col-md-4 col-xl-3 grid-item ${yehiElement.category}`} data-category={yehiElement.category} key={yehiElement.id}>
+                            <div className={`col-sm-6 col-md-4 col-xl-3 element-item ${yehiElement.category}`} key={yehiElement.id}>
                               <Card
                                 category={yehiElement.category}
                                 title={yehiElement.title}
