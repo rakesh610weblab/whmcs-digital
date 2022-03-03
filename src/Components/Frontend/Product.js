@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import Cta from "./Cta";
-import Allcards from "./Dynamicdata/Allcards";
+import ProductsCards from "./Dynamicdata/ProductsCards";
 import Card from "./Card";
+import $ from 'jquery';
 
 const Product = (props) => {
   useEffect(() => {
@@ -28,7 +29,7 @@ const Product = (props) => {
                 development services.
               </h3>
               <div className="search_form">
-                <div className="input-group">
+                {/* <div className="input-group">
                   <input
                     type="text"
                     className="form-control"
@@ -37,7 +38,7 @@ const Product = (props) => {
                   <div className="input-group-append">
                     <button className="default_btn">Search</button>
                   </div>
-                </div>
+                </div> */}
                 <p>
                   Over 100 High-End Modules, Extensions And Themes With
                   <span>7-Day Free Access!</span>
@@ -64,32 +65,22 @@ const Product = (props) => {
                       <div className="filters product_page">
                           <ul>
                               <li className="is-checked" data-filter="*">All</li>
-
-                              <li data-filter="domain">Domain</li>
-
-                              <li data-filter="payment">Payment Gateway</li>
-
+                              <li data-filter=".domain">Domain</li>
+                              <li data-filter=".payment">Payment Gateway</li>
                               <li data-filter=".server">Server Provision</li>
-
                               <li data-filter=".theme">Theming</li>
-
                               <li data-filter=".report">Reporting</li>
-
                               <li data-filter=".market">Marketing</li>
-
                               <li data-filter=".other">Others</li>
                           </ul>
                       </div>
                   </div>
 
                   <div className="col-md-12">
-                      <div className="row row-40 justify-content-center grid">
-                        {Allcards.map((yehiElement) => {
+                      <div className="row row-40 justify-content-center grid" data-isotope='{ "itemSelector": ".grid-item" }'>
+                        {ProductsCards.map((yehiElement) => {
                           return (
-                            <div
-                              className="col-sm-6 col-md-4 col-xl-3" data-category={yehiElement.category}
-                              key={yehiElement.id}
-                            >
+                            <div className={`col-sm-6 col-md-4 col-xl-3 grid-item ${yehiElement.category}`} data-category={yehiElement.category} key={yehiElement.id}>
                               <Card
                                 category={yehiElement.category}
                                 title={yehiElement.title}
@@ -112,6 +103,7 @@ const Product = (props) => {
       <Cta title="Not able to find required module? Or looking for custom module" />
     </>
   );
+
 };
 
 export default Product;

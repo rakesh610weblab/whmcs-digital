@@ -7,6 +7,7 @@ import Allcards from "./Dynamicdata/Allcards";
 import Cta from "./Cta";
 import TestimonialSlider from "./TestimonialSlider";
 import Slider from "react-slick";
+import ProductsCards from "./Dynamicdata/ProductsCards";
 
 const Home = (props) => {
   useEffect(() => {
@@ -23,7 +24,21 @@ const Home = (props) => {
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+         slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+         slidesToShow: 1,
+        }
+       }
+    ]
   };
 
   return (
@@ -265,7 +280,7 @@ const Home = (props) => {
             </div>
           </div>
           <div className="row row-40">
-            {Allcards.slice(0, 4).map((yehiElement) => {
+            {ProductsCards.slice(0, 4).map((yehiElement) => {
               return (
                 <div
                   className="col-sm-6 col-md-4 col-xl-3"
