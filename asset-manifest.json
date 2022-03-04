@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/whmcs-digital/static/css/main.e08763ea.css",
-    "main.js": "/whmcs-digital/static/js/main.5653017e.js",
+    "main.css": "/whmcs-digital/static/css/main.c8fd9e15.css",
+    "main.js": "/whmcs-digital/static/js/main.2bf77aa6.js",
     "static/js/787.aa694ea3.chunk.js": "/whmcs-digital/static/js/787.aa694ea3.chunk.js",
     "static/media/about_bg.png": "/whmcs-digital/static/media/about_bg.aabcac0cdc17afde7214.png",
     "static/media/contact_page_bg.png": "/whmcs-digital/static/media/contact_page_bg.449f4e5f047ce18f4042.png",
@@ -26,12 +26,12 @@
     "static/media/modules_after.png": "/whmcs-digital/static/media/modules_after.db59435929fe3bb3454c.png",
     "static/media/top_image.jpg": "/whmcs-digital/static/media/top_image.87eec29d905cb03f5923.jpg",
     "index.html": "/whmcs-digital/index.html",
-    "main.e08763ea.css.map": "/whmcs-digital/static/css/main.e08763ea.css.map",
-    "main.5653017e.js.map": "/whmcs-digital/static/js/main.5653017e.js.map",
+    "main.c8fd9e15.css.map": "/whmcs-digital/static/css/main.c8fd9e15.css.map",
+    "main.2bf77aa6.js.map": "/whmcs-digital/static/js/main.2bf77aa6.js.map",
     "787.aa694ea3.chunk.js.map": "/whmcs-digital/static/js/787.aa694ea3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e08763ea.css",
-    "static/js/main.5653017e.js"
+    "static/css/main.c8fd9e15.css",
+    "static/js/main.2bf77aa6.js"
   ]
 }
