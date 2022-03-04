@@ -14,17 +14,17 @@ const Product = (props) => {
   }, []);
 
   
-  $(document).ready(function($) {
-    $(".filters").on("click", "li", function () {
-        var a = $(".grid").isotope({});
-        var e = $(this).attr("data-filter");
-        a.isotope({ filter: e });
+//   $(document).ready(function($) {
+//     $(".filters").on("click", "li", function () {
+//         var a = $(".grid").isotope({});
+//         var e = $(this).attr("data-filter");
+//         a.isotope({ filter: e });
         
-    });
-    $(".filters").on("click", "li", function () {
-        $(this).addClass("active").siblings().removeClass("active");
-    });
-}) 
+//     });
+//     $(".filters").on("click", "li", function () {
+//         $(this).addClass("active").siblings().removeClass("active");
+//     });
+// });  
 
   return (
     <>
@@ -100,7 +100,7 @@ const Product = (props) => {
                                 title={yehiElement.title}
                                 image={yehiElement.image}
                                 description={yehiElement.description}
-                                readmorelink={yehiElement.readmorelink}
+                                readmorelink="/contact"
                                 price={yehiElement.price}
                               />
                             </div>

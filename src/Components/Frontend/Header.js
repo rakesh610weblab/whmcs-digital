@@ -141,7 +141,7 @@ const Navbar = () => {
                           <a
                             activeclassname="active"
                             className="nav-link"
-                            href="//www.whmcsdigital.com/clientarea/submitticket.php" target="_blank" rel="noreferrer"
+                            href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&deptid=1" target="_blank" rel="noreferrer"
                           >
                             Request Quote
                           </a>

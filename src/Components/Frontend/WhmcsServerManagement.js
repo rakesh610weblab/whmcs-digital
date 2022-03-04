@@ -22,12 +22,13 @@ const WhmcsServerManagement = (props) => {
             <div className="row">
                 <div className="col-12">
                     <h1>Web Server Administrator </h1>
-                    <h3> <span>Want to take your business to a higher level? Choose the best web server for it.</span></h3> <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&amp;deptid=2" className="default_btn" target="_blank" rel="noreferrer">Hire Server Administrator</a>
+                    <h3> <span>Want to take your business to a higher level? Choose the best web server for it.</span></h3> <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&amp;deptid=2" className="default_btn" target="_blank" rel="noreferrer">GET A QUOTE</a>
                     <div className="web_server_img"> <img src="whmcs-digital/images/web-server.png" alt="Web server" className="img-fluid"/> </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section className="whmcs_services perform_section service_detail third_party">
         <div className=" container">
             <div className="row">
@@ -82,6 +83,7 @@ const WhmcsServerManagement = (props) => {
             </div>
         </div>
     </section>
+
     <section className="server_hsosting">
         <div className="container">
             <div className="row">
@@ -107,6 +109,7 @@ const WhmcsServerManagement = (props) => {
         </div>
         </div>
     </section>
+
     <section className="service_offer">
         <div className="container">
             <div className="row align-items-center">
@@ -130,6 +133,7 @@ const WhmcsServerManagement = (props) => {
             </div>
         </div>
     </section>
+    
     <section className="get_touch">
         <div className="container">
             <div className="row align-items-center">

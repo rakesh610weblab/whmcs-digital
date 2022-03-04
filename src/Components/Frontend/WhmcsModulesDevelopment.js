@@ -29,7 +29,7 @@ const WhmcsModulesDevelopment = (props) => {
                             <li> <span className="icon icon-checked"></span> Hire the best experts in the industry </li>
                             <li> <span className="icon icon-checked"></span> Chat with your dedicated developer. </li>
                             <li> <span className="icon icon-checked"></span> Get the solution in no time </li>
-                        </ul> <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&amp;deptid=2" className="default_btn" target="_blank" rel="noreferrer">Hire Now</a> </div>
+                        </ul> <a href="//www.whmcsdigital.com/clientarea/submitticket.php?step=2&amp;deptid=2" className="default_btn" target="_blank" rel="noreferrer">Get A Quote</a> </div>
                     <div className="col-md-12 col-lg-5">
                         <div className="whmcs_setup_img"> <img src="whmcs-digital/images/whmcs_modules_img.png" alt="WHMCS Modules Development & Automation" className="img-fluid"/> </div>
                     </div>

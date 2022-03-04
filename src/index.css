@@ -1728,7 +1728,6 @@ header.header_main.inner_page .header_menu {
 
 .software.product_page .slider_box {
   margin-top: 40px;
-  min-height: 602px;
 }
 
 .product_banner.about_banner {
@@ -3160,6 +3159,7 @@ section.custom_content {
 }
 
 .get_touch_form h3 {
+  margin-bottom: 20px;
   font-family: var(--Walsheim-font);
   font-weight: 700;
   font-size: 36px;
@@ -8254,7 +8254,7 @@ section.software.home_software {
   }
 }
 
-.home_software a.buy_now, .home_software .rating_box {
+.home_software a.buy_now, .home_software .rating_box, section.software.product_page.home_product .software_btns a.buy_now, .product_tabs .software_btns a.buy_now{
   display: none;
 }
 .faq-heading {

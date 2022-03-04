@@ -290,7 +290,7 @@ const Home = (props) => {
                     title={yehiElement.title}
                     image={yehiElement.image}
                     description={yehiElement.description}
-                    readmorelink={yehiElement.readmorelink}
+                    readmorelink="/contact"
                     price={yehiElement.price}
                   />
                 </div>
@@ -312,7 +312,7 @@ const Home = (props) => {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="view_all"> <a href="https://goo.gl/maps/c6qTQGnyzbgPqVdC8" target="_blank" rel="noreferrer" className="default_btn">View All Reviews</a> </div>
+                        <div className="view_all"> <Link to="/testimonial" className="default_btn">View All Reviews</Link> </div>
                     </div>
                 </div>
                 <div className="TestimonialSlider row-40">

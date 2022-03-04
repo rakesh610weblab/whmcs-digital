@@ -18,6 +18,7 @@ import WhmcsCustomization from './Components/Frontend/WhmcsCustomization';
 import WhmcsModulesDevelopment from './Components/Frontend/WhmcsModulesDevelopment';
 import WhmcsCustomTheme from './Components/Frontend/WhmcsCustomTheme';
 import WhmcsServerManagement from './Components/Frontend/WhmcsServerManagement';
+import WhmcsThirdparty from './Components/Frontend/WhmcsThirdparty';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           <Route exact path="/whmcs-modules-development" element={<WhmcsModulesDevelopment setProgress={setProgress}/>} />
           <Route exact path="/whmcs-custom-theme-development" element={<WhmcsCustomTheme setProgress={setProgress}/>} />
           <Route exact path="/server-management-services" element={<WhmcsServerManagement setProgress={setProgress}/>} />
+          <Route exact path="/third-party-api-integration" element={<WhmcsThirdparty setProgress={setProgress}/>} />
         </Routes>
         <Footer/>
       </Router>

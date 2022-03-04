@@ -24,7 +24,7 @@ const Allcards = [
       image: "icon-maintenance",
       title: "3rd Party Tool/APIs integration",
       description: "Our professionals are well-experienced in customizing the payment gateway integration or other API integrations into your WHMCS.",
-      readmorelink: "/whmcs-modules-development",
+      readmorelink: "/third-party-api-integration",
       price: "$49.95/yr",
       review: "5",
       category: ""
