@@ -8,6 +8,7 @@ import Cta from "./Cta";
 import TestimonialSlider from "./TestimonialSlider";
 import Slider from "react-slick";
 import ProductsCards from "./Dynamicdata/ProductsCards";
+import $ from "jquery";
 
 const Home = (props) => {
   useEffect(() => {
@@ -16,6 +17,16 @@ const Home = (props) => {
     document.querySelector("header").className = "header_main";
     window.scrollTo(0, 0);
   }, []);
+
+  const toogleEnquire = () =>{ 
+    var element = document.getElementById("EnquireNow");
+    element.classList.toggle("enquire-open");
+    if ($("body").hasClass("noscroll")) {
+      $("body").removeClass("noscroll");
+    } else {
+      $("body").addClass("noscroll");
+    }
+  }
 
   var settings = {
     dots: false,
@@ -29,16 +40,16 @@ const Home = (props) => {
       {
         breakpoint: 1024,
         settings: {
-         slidesToShow: 2,
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 767,
         settings: {
-         slidesToShow: 1,
-        }
-       }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -56,41 +67,7 @@ const Home = (props) => {
                   Offering a broad spectrum of cutting-edge WHMCS services
                   across the world!
                 </p>
-                <div className="happy_client">
-                  <div className="client_box">
-                    <div className="media">
-                      <div className="media-left">
-                        <span className="icon icon-happy"></span>
-                      </div>
-                      <div className="media-body">
-                        <h3>10k+</h3>
-                        <p>Happy Customer</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="client_box">
-                    <div className="media">
-                      <div className="media-left">
-                        <span className="icon icon-add-group"></span>
-                      </div>
-                      <div className="media-body">
-                        <h3>250+</h3>
-                        <p>Valued Partner</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="client_box">
-                    <div className="media">
-                      <div className="media-left">
-                        <span className="icon icon-setting"></span>
-                      </div>
-                      <div className="media-body">
-                        <h3>150+</h3>
-                        <p>Skill Consultants</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div className="our_clients">
                   <span className="client_span">Technology We Use</span>
                   <div className="logo_outer">
@@ -129,13 +106,167 @@ const Home = (props) => {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="banner_form">
-                <ContactusForm />
+              <div className="WhmcsRating">
+                <div className="row align-items-center">
+                  <div className="col-md-6">
+                    <div className="bannerRatingText">
+                      <h3>4.5/5</h3>
+                      <div className="review">
+                        <span className="icon icon-star"></span>
+                        <span className="icon icon-star"></span>
+                        <span className="icon icon-star"></span>
+                        <span className="icon icon-star"></span>
+                        <span className="icon icon-half"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="bannerRatingText">
+                      <h4>Excellent Work!!</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-12">
+                    <div className="product_tag">
+                      <a
+                        href="https://www.trustpilot.com/review/whmcsdigital.com"
+                        className="rating_tag"
+                        target="_blank"
+                      >
+                        <img
+                          src="whmcs-digital/images/trustpilot-img.png"
+                          alt="Trustpilot"
+                        />
+                      </a>
+                      <a
+                        href="https://www.upwork.com/ag/610weblab/"
+                        className="rating_tag"
+                        target="_blank"
+                      >
+                        <img
+                          src="whmcs-digital/images/upwork-img.png"
+                          alt="Upwork"
+                        />
+                      </a>
+                      <a
+                        href="https://www.google.com/maps/place/WHMCS+Digital+-+WHMCS+Development+Company+%7C+WHMCS+Modules+Development/@30.7070112,76.6849214,17z/data=!3m1!4b1!4m5!3m4!1s0x390fef60a1ea7de3:0x86c212f4d6dabcb3!8m2!3d30.7070112!4d76.6871101"
+                        className="rating_tag"
+                        target="_blank"
+                      >
+                        <img
+                          src="whmcs-digital/images/google-img.png"
+                          alt="Google"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-12">
+                    <div className="product_benefits">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <h4>Product Benefits</h4>
+                          <ul>
+                            <li>
+                              <span className="icon icon-checked"></span>Lifetime
+                              Valid
+                            </li>
+                            <li>
+                              <span className="icon icon-checked"></span>Unencrypted
+                              Source Code
+                            </li>
+                            <li>
+                              <span className="icon icon-checked"></span>Access To
+                              General Support
+                            </li>
+                            <li>
+                              <span className="icon icon-checked"></span>Free Module
+                              Updates
+                            </li>
+                          </ul>
+                          <a
+                            href="#"
+                            className="default_btn"
+                            onClick={toogleEnquire}
+                          >
+                            Enquire Now
+                          </a>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="benefit_box">
+                            <div className="happy_client">
+                              <div className="client_box">
+                                <div className="media">
+                                  <div className="media-left">
+                                    <span className="icon icon-happy"></span>
+                                  </div>
+                                  <div className="media-body">
+                                    <h3>10k+</h3>
+                                    <p>Happy Customer</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="client_box">
+                                <div className="media">
+                                  <div className="media-left">
+                                    <span className="icon icon-add-group"></span>
+                                  </div>
+                                  <div className="media-body">
+                                    <h3>250+</h3>
+                                    <p>Valued Partner</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="client_box">
+                                <div className="media">
+                                  <div className="media-left">
+                                    <span className="icon icon-setting"></span>
+                                  </div>
+                                  <div className="media-body">
+                                    <h3>150+</h3>
+                                    <p>Skill Consultants</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Popup */}
+      <div id="EnquireNow" className="enquire_now">
+        <a href="#" className="closePopup" onClick={toogleEnquire}>
+          <span className="icon icon-cancel"></span>
+        </a>
+        <div className="popup_outer">
+          <div className="container">
+            <div className="row margin_top">
+              <div className="col-md-6">
+                <div className="banner_form">
+                  <ContactusForm />
+                </div>
+              </div>
+              <div className="col-md-6">
+                <iframe
+                  src="https://calendly.com/whmcsdigital/30min?embed_domain=whmcsdigital.com&amp;embed_type=Inline&amp;hide_event_type_details=1&amp;hide_gdpr_banner=1&amp;text_color=000000&amp;primary_color=0384fd"
+                  height="800"
+                  width="100%"
+                  border="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Services Carousle Section */}
       <section className="software home_software">
@@ -159,19 +290,20 @@ const Home = (props) => {
             </div>
           </div>
           <div className="SoftwareSlider row-40">
-          <Slider {...settings}>
-            {Allcards.map((yehiElement) => {
-              return (
-                  <Card 
+            <Slider {...settings}>
+              {Allcards.map((yehiElement) => {
+                return (
+                  <Card
                     key={yehiElement.id}
                     id={yehiElement.id}
                     title={yehiElement.title}
                     image={yehiElement.image}
                     description={yehiElement.description}
                     readmorelink={yehiElement.readmorelink}
+                    contact_text="Read More"
                   />
-              );
-            })}
+                );
+              })}
             </Slider>
           </div>
           <div className="row">
@@ -207,8 +339,8 @@ const Home = (props) => {
                   <br></br>to Amplify Your Business Growth!
                 </h2>
                 <p className="p_style">
-                  We are a team of professional 
-                  <Link to="/custom-whmcs-development"> WHMCS developers </Link> 
+                  We are a team of professional
+                  <Link to="/custom-whmcs-development"> WHMCS developers </Link>
                   who’re young, experienced, innovative, and more importantly
                   loyal to our customers. We offer a wide range of striving
                   WHMCS services and custom solutions that are intended to
@@ -292,6 +424,7 @@ const Home = (props) => {
                     description={yehiElement.description}
                     readmorelink="/contact"
                     price={yehiElement.price}
+                    contact_text="Contact Us"
                   />
                 </div>
               );
@@ -300,26 +433,38 @@ const Home = (props) => {
         </div>
       </section>
 
-       {/* Testimonial Section      */}
-        <section className="testimonial_section home_testimonial">
-            <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-md-9">
-                        <div className="testimonial-top">
-                            <h3>Testimonials</h3>
-                            <h2 className="h2_style">WHMCS Digital loved by users worldwide</h2>
-                            <div className="review"> <span className="icon icon-star"></span> <span className="icon icon-star"></span> <span className="icon icon-star"></span> <span className="icon icon-star"></span> <span className="icon icon-half"></span> </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="view_all"> <Link to="/testimonial" className="default_btn">View All Reviews</Link> </div>
-                    </div>
+      {/* Testimonial Section      */}
+      <section className="testimonial_section home_testimonial">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-9">
+              <div className="testimonial-top">
+                <h3>Testimonials</h3>
+                <h2 className="h2_style">
+                  WHMCS Digital loved by users worldwide
+                </h2>
+                <div className="review">
+                  <span className="icon icon-star"></span>
+                  <span className="icon icon-star"></span>
+                  <span className="icon icon-star"></span>
+                  <span className="icon icon-star"></span>
+                  <span className="icon icon-half"></span>
                 </div>
-                <div className="TestimonialSlider row-40">
-                  <TestimonialSlider/>
-                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="view_all">
+                <Link to="/testimonial" className="default_btn">
+                  View All Reviews
+                </Link>
+              </div>
+            </div>
           </div>
-        </section>
+          <div className="TestimonialSlider row-40">
+            <TestimonialSlider />
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section  */}
       <Cta

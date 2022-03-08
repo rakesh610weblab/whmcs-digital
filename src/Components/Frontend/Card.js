@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Card = (props) => {
 
-  let { id, image, title, description, readmorelink, price, category } = props;
+  let { id, image, title, description, readmorelink, price, contact_text } = props;
 
   const Colors = ["#ed4c78", "#00c9a7", "#377dff", "#e97b57"];
   const [color, setColor] = useState('#377dff');
@@ -38,7 +38,7 @@ const Card = (props) => {
           <p className="p_style">{description}</p>
           <div className="software_btns">
             <Link to={readmorelink} className="read_more">
-              Read More
+              {contact_text}
             </Link>
             <Link to="/" className="buy_now">
               Buy Now

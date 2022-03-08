@@ -129,13 +129,12 @@ const Navbar = () => {
                           </NavLink>
                         </li>
                         <li className="nav-item">
-                          <a
+                          <Link
                             activeclassname="active"
                             className="nav-link"
-                            href="//www.whmcsdigital.com/clientarea/submitticket.php" target="_blank" rel="noreferrer"
-                          >
+                            to="support">
                             Support
-                          </a>
+                          </Link>
                         </li>
                         <li className="nav-item">
                           <a
