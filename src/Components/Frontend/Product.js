@@ -22,18 +22,17 @@ const Product = (props) => {
   useEffect(() => {
     setIsotope(
       new Isotope('.filter-container', {
-        // filter-container: className of the parent of the isotope elements
-        itemSelector: '.filter-item', // filter-item: className of the isotope elements
-        layoutMode: 'fitRows', // for horizontal isotope
+        itemSelector: '.filter-item',
+        layoutMode: 'fitRows',
       })
     );
-  }, []); // [] makes this useEffect work like a componentDidMount in a class component
+  }, []);
 
   useEffect(() => {
     if (isotope) {
-      // sanity check
       filterKey === '*' ? isotope.arrange({ filter: `*` }) : isotope.arrange({ filter: `.${filterKey}` });
     }
+    
     var $buttonGroup = $('.filters');
     $buttonGroup.on('click', 'li', function(event) {
         $buttonGroup.find('.is-checked').removeClass('is-checked');
