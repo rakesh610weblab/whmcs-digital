@@ -1,49 +1,47 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Cta from "./Cta";
 import ProductsCards from "./Dynamicdata/ProductsCards";
 import Card from "./Card";
-import $ from 'jquery';
-import isotope from "isotope-layout";
+import $ from "jquery"
+import Isotope from "isotope-layout";
 
 const Product = (props) => {
+
+  // state for storing the isotope object, with an initial value of null
+  const [isotope, setIsotope] = useState(null); 
+  // state for storing the filter keyword, with an initial value of *, which matches everything
+  const [filterKey, setFilterKey] = useState('*');
+
   useEffect(() => {
     document.title = `Products | WHMCS Digital`;
     props.setProgress(100);
     document.querySelector("header").className = "header_main inner_page";
   }, []);
 
-  
-//   $(document).ready(function($) {
-//     $(".filters").on("click", "li", function () {
-//         var a = $(".grid").isotope({});
-//         var e = $(this).attr("data-filter");
-//         a.isotope({ filter: e });
-        
-//     });
-//     $(".filters").on("click", "li", function () {
-//         $(this).addClass("active").siblings().removeClass("active");
-//     });
-// });  
+  useEffect(() => {
+    setIsotope(
+      new Isotope('.filter-container', {
+        // filter-container: className of the parent of the isotope elements
+        itemSelector: '.filter-item', // filter-item: className of the isotope elements
+        layoutMode: 'fitRows', // for horizontal isotope
+      })
+    );
+  }, []); // [] makes this useEffect work like a componentDidMount in a class component
 
-// var $grid = $('.grid').isotope({
-//   // options
-//   itemSelector: '.grid-item',
-//   layoutMode: 'fitRows',
+  useEffect(() => {
+    if (isotope) {
+      // sanity check
+      filterKey === '*' ? isotope.arrange({ filter: `*` }) : isotope.arrange({ filter: `.${filterKey}` });
+    }
+    var $buttonGroup = $('.filters');
+    $buttonGroup.on('click', 'li', function(event) {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        var $button = $(event.currentTarget);
+        $button.addClass('is-checked');
+    });
+  }, [isotope, filterKey]);
 
-// });
-
-// // change is-checked class on buttons
-// var $buttonGroup = $('.filters');
-// $buttonGroup.on('click', 'li', function(event) {
-//   $buttonGroup.find('.is-checked').removeClass('is-checked');
-//   var $button = $(event.currentTarget);
-//   $button.addClass('is-checked');
-//   var filterValue = $button.attr('data-filter');
-//   $grid.isotope({
-//     filter: filterValue
-//   });
-// });
 
   return (
     <>
@@ -97,23 +95,23 @@ const Product = (props) => {
                   <div className="col-md-12">
                       <div className="filters product_page">
                           <ul>
-                              <li className="is-checked" data-filter="*">All</li>
-                              <li data-filter=".domain">Domain</li>
-                              <li data-filter=".payment">Payment Gateway</li>
-                              <li data-filter=".server">Server Provision</li>
-                              <li data-filter=".theme">Theming</li>
-                              <li data-filter=".report">Reporting</li>
-                              <li data-filter=".market">Marketing</li>
-                              <li data-filter=".other">Others</li>
+                              <li className="is-checked" onClick={() => setFilterKey('*')}>All</li>
+                              <li onClick={() => setFilterKey('domain')}>Domain</li>
+                              <li onClick={() => setFilterKey('payment')}>Payment Gateway</li>
+                              <li onClick={() => setFilterKey('server')}>Server Provision</li>
+                              <li onClick={() => setFilterKey('theme')}>Theming</li>
+                              <li onClick={() => setFilterKey('report')}>Reporting</li>
+                              <li onClick={() => setFilterKey('market')}>Marketing</li>
+                              <li onClick={() => setFilterKey('other')}>Others</li>
                           </ul>
                       </div>
                   </div>
 
                   <div className="col-md-12">
-                      <div className="row row-40 justify-content-center grid" data-isotope='{ "itemSelector": ".element-item" }'>
+                      <div className="row row-40 justify-content-center filter-container" >
                         {ProductsCards.map((yehiElement) => {
                           return (
-                            <div className={`col-sm-6 col-md-4 col-xl-3 element-item ${yehiElement.category}`} key={yehiElement.id}>
+                            <div className={`col-sm-6 col-md-4 col-xl-3 filter-item ${yehiElement.category}`} key={yehiElement.id}>
                               <Card
                                 category={yehiElement.category}
                                 title={yehiElement.title}
