@@ -4,10 +4,7 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-const ContactusForm = () => {
-  const SERVICE_ID = "service_9dhehpr";
-  const TEMPLATE_ID = "template_1urc2g8";
-  const USER_ID = "user_hAeKHppjv1vV4XEelPZGw";
+const ContactusForm = (props) => {
 
   const {
     register,
@@ -43,7 +40,8 @@ const ContactusForm = () => {
         message,
       };
 
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID);
+    await emailjs.send(props.serviceid, props.templateid, templateParams, props.userid);
+
 
       reset();
       toastifySuccess();

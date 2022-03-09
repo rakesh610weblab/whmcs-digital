@@ -32,7 +32,7 @@ const Product = (props) => {
     if (isotope) {
       filterKey === '*' ? isotope.arrange({ filter: `*` }) : isotope.arrange({ filter: `.${filterKey}` });
     }
-    
+
     var $buttonGroup = $('.filters');
     $buttonGroup.on('click', 'li', function(event) {
         $buttonGroup.find('.is-checked').removeClass('is-checked');

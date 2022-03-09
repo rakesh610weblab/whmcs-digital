@@ -20,10 +20,16 @@ import WhmcsCustomTheme from './Components/Frontend/WhmcsCustomTheme';
 import WhmcsServerManagement from './Components/Frontend/WhmcsServerManagement';
 import WhmcsThirdparty from './Components/Frontend/WhmcsThirdparty';
 import Support from './Components/Frontend/Support';
+import Sitemap from './Components/Frontend/Sitemap';
 
 function App() {
 
+  const serviceid = process.env.SERVICE_ID;
+  const templateid = process.env.TEMPLATE_ID;
+  const userid = process.env.USER_ID;
+
   const [progress, setProgress] = useState(0);
+
 
   return (
     <>
@@ -47,6 +53,7 @@ function App() {
           <Route exact path="/server-management-services" element={<WhmcsServerManagement setProgress={setProgress}/>} />
           <Route exact path="/third-party-api-integration" element={<WhmcsThirdparty setProgress={setProgress}/>} />
           <Route exact path="/support" element={<Support setProgress={setProgress}/>} />
+          <Route exact path="/sitemap" element={<Sitemap setProgress={setProgress}/>} />
         </Routes>
         <Footer/>
       </Router>
